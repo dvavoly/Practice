@@ -9,17 +9,18 @@ public class NestExceptionHandlingExercise {
 
             int b = 42 / a;
             System.out.println("a: " + a);
+            System.out.println("b; " + b);
 
             try {
                 if (a == 1) {
-                    
+
                 }
             } catch (Exception e) {
-                // TODO: handle exception
+                System.out.println(e);
             }
 
-        } catch (Exception e) {
-            // TODO: handle exception
+        } catch (Exception ex) {
+            System.out.println(ex);
         }
     }
 }
