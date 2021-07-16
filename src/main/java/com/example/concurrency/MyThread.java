@@ -1,6 +1,6 @@
 package com.example.concurrency;
 
-public class MyThread extends Thread {
+public class MyThread implements Runnable {
     @Override
     public void run() {
         long sum = 0;
@@ -12,7 +12,8 @@ public class MyThread extends Thread {
     }
 
     public static void main(String[] args) {
-        var t = new MyThread();
+        // var t = new MyThread();
+        Thread t = new Thread(new MyThread(), "Another Thread");
         t.run();
         t.start();
         System.out.println(Thread.currentThread().getName());
