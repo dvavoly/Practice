@@ -2,7 +2,7 @@ package com.example.concurrency;
 
 class CallMe {
     void call(String message) {
-        System.out.println("[" + message);
+        System.out.print("[" + message);
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -25,7 +25,9 @@ class Caller implements Runnable {
 
     @Override
     public void run() {
-        target.call(message);
+        synchronized (target) {
+            target.call(message); // synchronized block
+        }
     }
 }
 

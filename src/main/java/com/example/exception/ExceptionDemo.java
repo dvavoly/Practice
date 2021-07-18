@@ -1,7 +1,11 @@
 package com.example.exception;
 
 class MyException extends Exception {
-    private int detail;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 100L;
+	private int detail;
 
     MyException(int detail) {
         this.detail = detail;
