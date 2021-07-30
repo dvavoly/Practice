@@ -9,7 +9,6 @@ public class JavaESTest {
         elements.add(10);
         int firstElement = elements.get(1);
         System.out.println(firstElement);
-
     }
 }
 
@@ -29,4 +28,3 @@ class _C {
         }
     }
 }
-
