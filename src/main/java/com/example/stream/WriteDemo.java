@@ -5,6 +5,7 @@ public class WriteDemo {
         int b;
         b = 'A';
         System.out.write(b);
-        System.out.write('\n');
+        // System.out.write('\n');
+        System.out.flush();
     }
 }
