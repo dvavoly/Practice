@@ -1,6 +1,6 @@
 package com.example.practice;
 
-class Stats<T extends Number & Comparable> {
+class Stats<T extends Number> {
     T[] numbers;
 
     Stats(T[] numbers) {
@@ -28,7 +28,7 @@ public class BoundsDemo {
         v = statsDouble.average();
         System.out.println("Average: " + v);
 
-        String[] arrayOfString = { "1", "2", "3", "4", "5" };
+        // String[] arrayOfString = { "1", "2", "3", "4", "5" };
         // Stats<String> statsStr = new Stats<String>(arrayOfString);
     }
 }
