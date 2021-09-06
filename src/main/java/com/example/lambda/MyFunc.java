@@ -1,6 +1,6 @@
 package com.example.lambda;
 
 @FunctionalInterface
-public interface NumericFunc {
-    int func(int n);
+public interface MyFunc<T> {
+    T func(T t);
 }

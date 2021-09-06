@@ -1,5 +1,6 @@
 package com.example.lambda;
-// Another functional interface
+
+@FunctionalInterface
 public interface NumericTest {
     boolean test(int n);
 }
