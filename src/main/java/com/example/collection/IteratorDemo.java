@@ -1,7 +1,6 @@
 package com.example.collection;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.ListIterator;
 
 public class IteratorDemo {
