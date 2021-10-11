@@ -3,9 +3,10 @@ package com.example.practice;
 import java.time.LocalDateTime;
 import java.util.Comparator;
 
-public class LocalDateTimeDemo implements Comparator<LocalDateTimeDemo>{
+public class LocalDateTimeDemo implements Comparator<LocalDateTimeDemo> {
     private static LocalDateTime ldt1;
     private static LocalDateTime ldt2;
+
     public static void main(String[] args) {
         ldt1 = LocalDateTime.now();
         ldt2 = ldt1.plusDays(0);
@@ -28,6 +29,6 @@ public class LocalDateTimeDemo implements Comparator<LocalDateTimeDemo>{
 
     @Override
     public int compare(LocalDateTimeDemo o1, LocalDateTimeDemo o2) {
-        return o1.ldt1.compareTo(o2.ldt1);
+        return LocalDateTimeDemo.ldt1.compareTo(LocalDateTimeDemo.ldt1);
     }
 }
