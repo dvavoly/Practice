@@ -1,7 +1,6 @@
 package com.example.io;
 
 import java.io.File;
-import java.io.FilenameFilter;
 
 public class FileDemo {
     public static void main(String[] args) {
