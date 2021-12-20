@@ -1,7 +1,6 @@
 package com.example.streamApi;
 
 import java.util.List;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 record NamePhoneEmail(String name, String phone, String email) {
